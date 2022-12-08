@@ -1,0 +1,615 @@
+:root {
+  --capoo-blue: rgb(78, 194, 228);
+  --capoo-back-blue: rgb(63, 154, 188);
+  --capoo-black: rgb(62, 61, 61);
+}
+#runCapoo.capoo.cover {
+  width: 10vw; /* 200px * 200px */
+  height: 10vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: extension-capoo-walk-distance 15s linear infinite;
+}
+/* ear */
+#runCapoo.capoo .ear-left {
+  width: 20%;
+  height: 20%;
+  clip-path: polygon(
+    0% 100%,
+    15% 60%,
+    20% 50%,
+    30% 40%,
+    40% 30%,
+    45% 26%,
+    50% 25%,
+    55% 28%,
+    60% 32%,
+    65% 35%,
+    70% 40%,
+    80% 50%,
+    85% 55%,
+    90% 60%,
+    95% 65%,
+    99% 80%,
+    100% 100%
+  );
+  background-color: var(--capoo-black);
+  position: absolute;
+  top: 12%; /* top: 60px; */
+  left: 22%; /* left: 110px; */
+  z-index: 1;
+  scale: 1.2;
+}
+#runCapoo.capoo .ear-left::after {
+  content: "";
+  position: absolute;
+  width: 83%;
+  height: 100%;
+  top: 10%;
+  left: 10%;
+  clip-path: polygon(
+    0% 100%,
+    15% 60%,
+    20% 50%,
+    30% 40%,
+    40% 30%,
+    45% 26%,
+    50% 25%,
+    55% 28%,
+    60% 32%,
+    65% 35%,
+    70% 40%,
+    80% 50%,
+    85% 55%,
+    90% 60%,
+    95% 65%,
+    99% 80%,
+    100% 100%
+  );
+  background-color: var(--capoo-blue);
+}
+#runCapoo.capoo .ear-right {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  z-index: 10;
+  top: 14%;
+  left: 44%;
+}
+#runCapoo.capoo .ear-right-outline {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    0% 60%,
+    10% 40%,
+    20% 25%,
+    30% 12%,
+    45% 5%,
+    52% 8%,
+    60% 15%,
+    70% 30%,
+    80% 42%,
+    100% 75%
+  );
+  background: var(--capoo-black);
+}
+#runCapoo.capoo .ear-right-inner {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  top: 12%;
+  left: 8%;
+  clip-path: polygon(
+    0% 60%,
+    10% 40%,
+    20% 25%,
+    30% 12%,
+    45% 5%,
+    52% 8%,
+    60% 15%,
+    70% 30%,
+    80% 42%,
+    100% 75%
+  );
+  background-color: var(--capoo-blue);
+  z-index: 7;
+}
+/* body */
+#runCapoo.capoo .body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#runCapoo.capoo .body .body-round {
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: absolute;
+  top: 20%;
+}
+#runCapoo.capoo .body .body-rounded {
+  width: 77%;
+  height: 49%;
+  clip-path: inset(4% 5.2% 12.2% 2.6% round 45% 40% 30% 35%);
+  background-color: var(--capoo-blue);
+  position: absolute;
+  top: 2.6%;
+  left: 2.6%;
+  z-index: 6;
+}
+#runCapoo.capoo .body .body-rounded-outline {
+  width: 82%;
+  height: 54%;
+  position: absolute;
+  clip-path: inset(3.7% 4.9% 11.1% 2.4% round 45% 40% 30% 35%);
+  background-color: var(--capoo-black);
+  z-index: 5;
+}
+/* abdomin */
+#runCapoo.capoo .body .body-rounded::after {
+  content: "";
+  width: 60%;
+  height: 24.5%;
+  rotate: 5deg;
+  clip-path: ellipse(25% 40% at 50% 50%);
+  background-color: white;
+  position: absolute;
+  top: 77.5%;
+  left: 7.8%;
+  z-index: 9;
+  animation: extension-capoo-walk-abdomin 2s linear infinite;
+}
+
+/* tail */
+#runCapoo.capoo .body .tail {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 19%;
+  left: 54%;
+  z-index: 9;
+}
+#runCapoo.capoo .body .tail .tail-inner {
+  width: 40%;
+  height: 49%;
+  background-color: var(--capoo-blue);
+  position: absolute;
+  top: 1%;
+  left: -1%;
+  clip-path: polygon(
+    0 5%,
+    70% 14%,
+    93% 12%,
+    95% 13%,
+    97% 20%,
+    100% 30%,
+    99% 40%,
+    97% 50%,
+    94% 60%,
+    91% 70%,
+    87% 80%,
+    80% 90%,
+    65% 95%,
+    60% 100%
+  );
+  z-index: 10;
+  scale: 0.9;
+}
+#runCapoo.capoo .body .tail .tail-outline {
+  width: 40%;
+  height: 49%;
+  background-color: var(--capoo-black);
+  position: absolute;
+  clip-path: polygon(
+    0 5%,
+    70% 14%,
+    93% 12%,
+    95% 13%,
+    97% 20%,
+    100% 30%,
+    99% 40%,
+    97% 50%,
+    94% 60%,
+    91% 70%,
+    87% 80%,
+    80% 90%,
+    65% 95%,
+    60% 100%
+  );
+}
+/* back-line */
+#runCapoo.capoo .body .tail .tail-line {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1%;
+  left: -1%;
+}
+/* 第一條線 */
+#runCapoo.capoo .body .tail .tail-line::before {
+  content: "";
+  width: 5%;
+  height: 10%;
+  background-color: var(--capoo-back-blue);
+  position: absolute;
+  top: 6.2%;
+  left: 10%;
+  border-radius: 0 0 60% 40%;
+  rotate: 9deg;
+  z-index: 10;
+}
+/* 第二條線 */
+#runCapoo.capoo .body .tail .tail-inner::before {
+  content: "";
+  width: 14.2%;
+  height: 27.2%;
+  background-color: var(--capoo-back-blue);
+  position: absolute;
+  top: 6%;
+  left: 46%;
+  border-radius: 0 0 60% 20%;
+  rotate: 5deg;
+  z-index: 10;
+}
+/* 第三條線 */
+#runCapoo.capoo .body .tail .tail-inner::after {
+  content: "";
+  width: 11.4%;
+  height: 22.7%;
+  background-color: var(--capoo-back-blue);
+  position: absolute;
+  top: 11.4%;
+  left: 70%;
+  border-radius: 0 0 80% 20%;
+  rotate: 5deg;
+  z-index: 10;
+}
+
+/* eye */
+#runCapoo.capoo .body .eye {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#runCapoo.capoo .body .eye .eye-left {
+  width: 7%;
+  height: 14%;
+  clip-path: ellipse(50% 40% at 50% 50%);
+  rotate: 10deg;
+  background-color: var(--capoo-black);
+  position: absolute;
+  top: 36%;
+  left: 17%;
+  z-index: 6;
+}
+#runCapoo.capoo .body .eye .eye-right {
+  width: 9%;
+  height: 15%;
+  rotate: -5deg;
+  clip-path: ellipse(50% 40% at 50% 50%);
+  background-color: var(--capoo-black);
+  position: absolute;
+  top: 36%;
+  left: 48%;
+  z-index: 6;
+}
+/* mouth */
+/* mouth-left */
+#runCapoo.capoo .body .mouth .mouth-left {
+  width: 8%;
+  height: 8%;
+  position: absolute;
+  top: 41%;
+  left: 28%;
+  rotate: 5deg;
+  z-index: 7;
+}
+#runCapoo.capoo .body .mouth .mouth-left .mouth-round {
+  /* mouth-outline */
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50% at 50% 50%);
+  background-color: var(--capoo-black);
+  position: absolute;
+  z-index: 6;
+}
+#runCapoo.capoo .body .mouth .mouth-left .mouth-round::after {
+  /* mouth-inner */
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  clip-path: circle(50% at 50% 50%);
+  background-color: var(--capoo-blue);
+}
+#runCapoo.capoo .body .mouth .mouth-left .mouth-cover {
+  width: 100%;
+  height: 50%;
+  background-color: var(--capoo-blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+}
+/* mouth */
+/* mouth-right */
+#runCapoo.capoo .body .mouth .mouth-right {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 39.6%;
+  left: 33%;
+  rotate: -5deg;
+  z-index: 7;
+}
+#runCapoo.capoo .body .mouth .mouth-right .mouth-round {
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50% at 50% 50%);
+  background-color: var(--capoo-black);
+  position: absolute;
+  z-index: 6;
+}
+#runCapoo.capoo .body .mouth .mouth-right .mouth-round::after {
+  content: "";
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  clip-path: circle(50% at 50% 50%);
+  background-color: var(--capoo-blue);
+}
+#runCapoo.capoo .body .mouth .mouth-right .mouth-cover {
+  width: 100%;
+  height: 58%;
+  background-color: var(--capoo-blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+}
+
+/* feet */
+/* foot */
+#runCapoo.capoo .feet .foot {
+  width: 12%;
+  height: 16%;
+  position: absolute;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#runCapoo.capoo .feet .foot .foot-outline {
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(35% 40% at 50% 50%);
+  background-color: var(--capoo-black);
+  position: absolute;
+  z-index: 7;
+}
+#runCapoo.capoo .feet .foot .foot-inner {
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(40% 40% at 50% 50%);
+  background-color: var(--capoo-blue);
+  position: absolute;
+  top: 6.2%;
+  left: 0;
+  z-index: 7;
+  scale: 0.5;
+}
+#runCapoo.capoo .feet .foot .foot-cover {
+  width: 70%;
+  height: 50%;
+  background-color: var(--capoo-blue);
+  position: absolute;
+  top: 0;
+  left: 15%;
+  z-index: 8;
+}
+#runCapoo.capoo .feet .foot.foot-left-1 {
+  top: 58%;
+  left: 50%;
+  z-index: 10;
+  animation-name: extension-capoo-walk-foot-left-1;
+}
+#runCapoo.capoo .feet .foot.foot-left-2 {
+  top: 57%;
+  left: 61%;
+  rotate: -5deg;
+  z-index: 10;
+  animation-name: extension-capoo-walk-foot-left-2;
+}
+#runCapoo.capoo .feet .foot.foot-left-3 {
+  left: 73%;
+  scale: 1.1;
+  z-index: 10;
+  animation-name: extension-capoo-walk-foot-left-3;
+}
+#runCapoo.capoo .feet .foot.foot-left-3 .foot-cover {
+  border-radius: 0 0 10% 0;
+}
+#runCapoo.capoo .feet .foot.foot-right-1 {
+  top: 56%;
+  left: 24%;
+  z-index: 1;
+  transform-origin: top center;
+  animation-name: extension-capoo-walk-foot-right-1;
+}
+#runCapoo.capoo .feet .foot.foot-right-2 {
+  top: 56.4%;
+  left: 40%;
+  z-index: 1;
+  transform-origin: top center;
+  animation-name: extension-capoo-walk-foot-right-2;
+}
+#runCapoo.capoo .feet .foot.foot-right-3 {
+  top: 56%;
+  left: 53%;
+  z-index: 1;
+  transform-origin: top center;
+  animation-name: extension-capoo-walk-foot-right-3;
+}
+/* 動畫 */
+@keyframes extension-capoo-walk-foot-left-1 {
+  0% {
+    transform: rotate(-7deg);
+    top: 57%;
+  }
+  10% {
+    transform: rotate(-10deg);
+    top: 57%;
+  }
+  25% {
+    transform: rotate(0);
+    top: 57%;
+  }
+  50% {
+    transform: rotate(10deg);
+    top: 56%;
+  }
+  75% {
+    transform: rotate(0);
+    top: 57%;
+  }
+  100% {
+    transform: rotate(-7deg);
+    top: 57%;
+  }
+}
+@keyframes extension-capoo-walk-foot-left-2 {
+  0% {
+    transform: rotate(-5deg);
+    top: 57%;
+  }
+  25% {
+    transform: rotate(5deg);
+    top: 56%;
+  }
+  50% {
+    transform: rotate(-5deg);
+    top: 57%;
+  }
+  85% {
+    transform: rotate(-15deg);
+    top: 56%;
+  }
+  100% {
+    transform: rotate(-5deg);
+    top: 57%;
+  }
+}
+@keyframes extension-capoo-walk-foot-left-3 {
+  0% {
+    transform: rotate(5deg);
+    top: 54.6%;
+  }
+  25% {
+    transform: rotate(-5deg);
+    top: 55%;
+  }
+  60% {
+    transform: rotate(-15deg);
+    top: 54.6%;
+  }
+  75% {
+    transform: rotate(-5deg);
+    top: 55%;
+  }
+  100% {
+    transform: rotate(5deg);
+    top: 54.6%;
+  }
+}
+@keyframes extension-capoo-walk-foot-right-1 {
+  0% {
+    transform: rotate(10deg);
+    /* top: -5; */
+  }
+  25% {
+    transform: rotate(0);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  85% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+    /* top: -5; */
+  }
+}
+@keyframes extension-capoo-walk-foot-right-2 {
+  0% {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes extension-capoo-walk-foot-right-3 {
+  0% {
+    transform: rotate(-7deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-7deg);
+  }
+}
+@keyframes extension-capoo-walk-abdomin {
+  0% {
+    top: 77.5%;
+    left: 7.8%;
+  }
+  25% {
+    top: 76%;
+    left: 7.3%;
+  }
+  50% {
+    top: 77.5%;
+    left: 7%;
+  }
+  75% {
+    top: 76%;
+    left: 7.3%;
+  }
+  100% {
+    top: 77.5%;
+    left: 7.8%;
+  }
+}
+@keyframes extension-capoo-walk-distance {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}

@@ -1,0 +1,321 @@
+:root {
+  --chicken-body-yellow: rgb(255, 242, 121);
+  --chicken-border: rgb(70, 70, 70);
+  --chicken-mouse: rgb(255, 212, 107);
+  --extension-chicken-trumpet: rgb(223, 197, 57);
+}
+#runCapoo.cover.trumpet-chicken {
+  width: 7vw; /* 70px * 70px */
+  height: 7vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: extension-trumpet-chicken-walk-distance 15s linear infinite;
+}
+#runCapoo.cover.trumpet-chicken .body-outline {
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(40% 35%);
+  background-color: var(--chicken-border);
+  position: absolute;
+  z-index: 1;
+}
+#runCapoo.cover.trumpet-chicken .body-inner {
+  width: 92%;
+  height: 92%;
+  clip-path: ellipse(40% 35%);
+  background-color: var(--chicken-body-yellow);
+  position: absolute;
+  left: 4%;
+  top: 4%;
+  z-index: 2;
+}
+#runCapoo.cover.trumpet-chicken .body-inner .eyes .eye {
+  width: 10.9%;
+  height: 10.9%;
+  background-color: var(--chicken-border);
+  position: absolute;
+  top: 41.3%;
+  border-radius: 100%;
+  z-index: 3;
+}
+#runCapoo.cover.trumpet-chicken .body-inner .eyes .eye.eye-left {
+  left: 17.4%;
+}
+#runCapoo.cover.trumpet-chicken .body-inner .eyes .eye.eye-right {
+  left: 54.3%;
+}
+#runCapoo.cover.trumpet-chicken .body-inner .mouse {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 52.2%;
+  left: 30.4%;
+}
+#runCapoo.cover.trumpet-chicken .body-inner .mouse .mouse-outline {
+  width: 21.7%;
+  height: 21.7%;
+  background-color: var(--chicken-border);
+  clip-path: polygon(
+    5% 55%,
+    0 50%,
+    5% 45%,
+    45% 21%,
+    50% 20%,
+    55% 21%,
+    95% 45%,
+    100% 50%,
+    95% 55%,
+    55% 79%,
+    50% 80%,
+    45% 79%
+  );
+  position: absolute;
+  z-index: 4;
+}
+#runCapoo.cover.trumpet-chicken .body-inner .mouse .mouse-inner {
+  width: 21.7%;
+  height: 21.7%;
+  background-color: var(--chicken-mouse);
+  clip-path: polygon(
+    5% 55%,
+    0 50%,
+    5% 45%,
+    45% 21%,
+    50% 20%,
+    55% 21%,
+    95% 45%,
+    100% 50%,
+    95% 55%,
+    55% 79%,
+    50% 80%,
+    45% 79%
+  );
+  position: absolute;
+  scale: 0.7;
+  z-index: 5;
+}
+#runCapoo.cover.trumpet-chicken .feet {
+  width: 100%;
+  height: 100%;
+}
+#runCapoo.cover.trumpet-chicken .feet .foot {
+  width: 2%;
+  height: 14%;
+  background-color: var(--chicken-border);
+  position: absolute;
+  top: 76%;
+  z-index: 1;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#runCapoo.cover.trumpet-chicken .feet .foot-left {
+  left: 36%;
+  transform: rotate(15deg);
+  animation-name: extension-trumpet-chicken-walk-foot-left;
+}
+#runCapoo.cover.trumpet-chicken .feet .foot-right {
+  left: 66%;
+  transform: rotate(-15deg);
+  animation-name: extension-trumpet-chicken-walk-foot-right;
+}
+/* trumpet */
+#runCapoo.cover.trumpet-chicken .trumpet {
+  width: 100%;
+  height: 100%;
+  rotate: 5deg;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  z-index: 6;
+  animation: extension-chicken-trumpet 1.5s linear infinite;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .trumpet-triangle .triangle-outline {
+  width: 50%;
+  height: 16%;
+  background-color: var(--chicken-border);
+  clip-path: polygon(0 0, 97% 45%, 100% 50%, 97% 55%, 0 100%);
+  position: absolute;
+  left: -12%;
+  z-index: 6;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .trumpet-triangle .triangle-inner {
+  width: 54%;
+  height: 16%;
+  background-color: var(--extension-chicken-trumpet);
+  clip-path: polygon(0 0, 97% 45%, 100% 50%, 97% 55%, 0 100%);
+  position: absolute;
+  left: -15%;
+  scale: 0.7;
+  z-index: 8;
+}
+/* horn-big */
+#runCapoo.cover.trumpet-chicken .trumpet .horn-big {
+  width: 16%;
+  height: 60%;
+  position: absolute;
+  top: -22%;
+  left: -14%;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .horn-big .horn-outline {
+  width: 100%;
+  height: 100%;
+  background-color: var(--chicken-border);
+  clip-path: ellipse(40% 35%);
+  position: absolute;
+  z-index: 7;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .horn-big .horn-inner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--extension-chicken-trumpet);
+  clip-path: ellipse(40% 35%);
+  position: absolute;
+  scale: 0.8;
+  z-index: 7;
+}
+/* horn-small */
+#runCapoo.cover.trumpet-chicken .trumpet .horn-small {
+  width: 10%;
+  height: 54%;
+  position: absolute;
+  top: -18%;
+  left: -12.5%;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .horn-small .horn-outline {
+  width: 100%;
+  height: 100%;
+  background-color: var(--chicken-border);
+  clip-path: ellipse(40% 35%);
+  position: absolute;
+  z-index: 9;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .horn-small .horn-inner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--chicken-mouse);
+  clip-path: ellipse(40% 35%);
+  position: absolute;
+  scale: 0.7;
+  z-index: 10;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .trumpet-sound {
+  width: 100%;
+  height: 100%;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .trumpet-sound .sound {
+  height: 10%;
+  background-color: var(--chicken-body-yellow);
+  clip-path: polygon(0 0, 97% 45%, 100% 50%, 97% 55%, 0 100%);
+  position: absolute;
+  animation: extension-chicken-trumpet-sound 0.5s steps(1, start) infinite;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .trumpet-sound .sound-1 {
+  width: 12%;
+  top: -10%;
+  left: -25%;
+  rotate: 40deg;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .trumpet-sound .sound-2 {
+  width: 12%;
+  top: 1%;
+  left: -28%;
+  rotate: 5deg;
+}
+#runCapoo.cover.trumpet-chicken .trumpet .trumpet-sound .sound-3 {
+  width: 10%;
+  top: 13%;
+  left: -25%;
+  rotate: -20deg;
+}
+/* animate */
+@keyframes extension-trumpet-chicken-walk-foot-left {
+  0% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes extension-trumpet-chicken-walk-foot-right {
+  0% {
+    transform: rotate(-10deg);
+  }
+  8% {
+    transform: rotate(-15deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes extension-trumpet-chicken-walk-distance {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+/* extension-chicken-trumpet */
+@keyframes extension-chicken-trumpet {
+  0% {
+    width: 100%;
+    height: 100%;
+    top: 55%;
+    left: 0;
+  }
+  25% {
+    width: 120%;
+    height: 120%;
+    top: 53%;
+    left: -8%;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    top: 55%;
+    left: 0;
+  }
+  75% {
+    width: 120%;
+    height: 90%;
+    top: 55%;
+    left: -8%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    top: 55%;
+    left: 0;
+  }
+}
+@keyframes extension-chicken-trumpet-sound {
+  0% {
+    width: 10%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 10%;
+  }
+}
