@@ -6,6 +6,7 @@
 #runCapoo.capoo.cover {
   width: 10vw; /* 200px * 200px */
   height: 10vw;
+  padding: 0;
   position: fixed;
   bottom: 0;
   right: 0;
