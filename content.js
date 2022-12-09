@@ -67,6 +67,7 @@ capoo.innerHTML = `
         </div>
       </div>
 `;
+console.log("定義capoo成功");
 
 //定義blakcapoo
 const blackCapoo = document.createElement("div");
@@ -148,6 +149,7 @@ blackCapoo.innerHTML = `
   </div>
 </div>
 `;
+console.log("定義blakcapoo成功");
 
 //定義chicken
 const chicken = document.createElement("div");
@@ -168,6 +170,7 @@ chicken.innerHTML = `<div class="body-outline"></div>
   <div class="foot foot-right"></div>
 </div>
 `;
+console.log("定義chicken成功");
 
 //定義trumpetChicken
 const trumpetChicken = document.createElement("div");
@@ -206,23 +209,27 @@ trumpetChicken.innerHTML = `<div class="body-outline"></div>
     <div class="sound sound-3"></div>
   </div>
 </div>`;
+console.log("定義trumpetChicken成功");
 
 //random決定加入哪隻capoo
 let capooList = [capoo, blackCapoo, chicken, trumpetChicken];
 let addDiv = createCapoo();
 //加到body內
 document.body.appendChild(addDiv);
+console.log("capoos加入body成功");
 
 //建立新的一隻
 let newAddDiv = createCapoo();
 
-//每走完一次(10s)，random換一隻
+//每走完一次(15s)，random換一隻
 setInterval(function () {
+  console.log("走了１５秒(一個視窗寬)");
   document.getElementById("runCapoo").remove();
   //加新的一隻到body內
   document.body.appendChild(newAddDiv);
   //建立新的一隻
   newAddDiv = createCapoo();
+  console.log("setInterval成功建立新的capoo");
 }, 15000);
 
 //被按到時，隨機在bottom 0%~70%之間移動
@@ -240,6 +247,7 @@ function createCapoo() {
   newAddDiv.setAttribute("id", "runCapoo");
   //加入事件監聽
   newAddDiv.addEventListener("click", capooMove);
+  console.log("建立capoo成功");
   //加到body內
   return newAddDiv;
 }
