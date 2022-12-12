@@ -8,6 +8,7 @@
   width: 7vw; /* 70px * 70px */
   height: 7vw;
   padding: 0;
+  background-color: transparent;
   position: fixed;
   bottom: 0;
   right: 0;
