@@ -120,12 +120,12 @@
   z-index: 7;
 }
 /* body */
-#runCapoo.black-capoo .body {
+#runCapoo.black-capoo .black-capoo-body {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-#runCapoo.black-capoo .body .body-round {
+#runCapoo.black-capoo .black-capoo-body .body-round {
   width: 100%;
   height: 100%;
   margin-left: 10%;
@@ -133,7 +133,7 @@
   position: absolute;
   top: 20%;
 }
-#runCapoo.black-capoo .body .body-rounded {
+#runCapoo.black-capoo .black-capoo-body .body-rounded {
   width: 77%;
   height: 49%;
   clip-path: inset(4% 5.2% 12.2% 2.6% round 45% 40% 30% 35%);
@@ -143,7 +143,7 @@
   left: 2.6%;
   z-index: 6;
 }
-#runCapoo.black-capoo .body .body-rounded-outline {
+#runCapoo.black-capoo .black-capoo-body .body-rounded-outline {
   width: 82%;
   height: 54%;
   position: absolute;
@@ -153,12 +153,12 @@
 }
 
 /* eye */
-#runCapoo.black-capoo .body .eye {
+#runCapoo.black-capoo .black-capoo-body .eye {
   width: 100%;
   height: 100%;
   position: relative;
 }
-#runCapoo.black-capoo .body .eye .eye-cover {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-cover {
   width: 120%;
   height: 30%;
   position: absolute;
@@ -166,7 +166,7 @@
   z-index: 8;
   top: 5%;
 }
-#runCapoo.black-capoo .body .eye .eye-lash {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-lash {
   width: 100%;
   height: 50%;
   position: absolute;
@@ -174,7 +174,7 @@
   bottom: 0;
   z-index: 9;
 }
-#runCapoo.black-capoo .body .eye .eye-outline {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-outline {
   width: 100%;
   height: 100%;
   clip-path: ellipse(50% 40% at 50% 50%);
@@ -182,7 +182,7 @@
   position: absolute;
   z-index: 6;
 }
-#runCapoo.black-capoo .body .eye .eye-inner {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-inner {
   width: 100%;
   height: 100%;
   clip-path: ellipse(50% 40% at 50% 50%);
@@ -191,7 +191,7 @@
   z-index: 7;
   scale: 0.6;
 }
-#runCapoo.black-capoo .body .eye .eye-left {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-left {
   width: 7%;
   height: 14%;
   rotate: 10deg;
@@ -200,15 +200,15 @@
   left: 17%;
   z-index: 6;
 }
-#runCapoo.black-capoo .body .eye .eye-left .eye-cover {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-left .eye-cover {
   left: 5%;
   rotate: 30deg;
 }
-#runCapoo.black-capoo .body .eye .eye-right .eye-cover {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-right .eye-cover {
   left: -15%;
   rotate: -30deg;
 }
-#runCapoo.black-capoo .body .eye .eye-right {
+#runCapoo.black-capoo .black-capoo-body .eye .eye-right {
   width: 9%;
   height: 15%;
   rotate: -5deg;
@@ -219,7 +219,7 @@
 }
 
 /* tail */
-#runCapoo.black-capoo .body .tail {
+#runCapoo.black-capoo .black-capoo-body .tail {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -227,7 +227,7 @@
   left: 54%;
   z-index: 9;
 }
-#runCapoo.black-capoo .body .tail .tail-inner {
+#runCapoo.black-capoo .black-capoo-body .tail .tail-inner {
   width: 40%;
   height: 47%;
   background-color: var(--capoo-body-black);
@@ -260,7 +260,7 @@
   z-index: 10;
   scale: 0.9;
 }
-#runCapoo.black-capoo .body .tail .tail-outline {
+#runCapoo.black-capoo .black-capoo-body .tail .tail-outline {
   width: 40%;
   height: 47%;
   background-color: var(--capoo-black);
@@ -291,7 +291,7 @@
 }
 /* back-line */
 /* 第一條閃電 */
-#runCapoo.black-capoo .body .tail .tail-inner::before {
+#runCapoo.black-capoo .black-capoo-body .tail .tail-inner::before {
   content: "";
   width: 35%;
   height: 45%;
@@ -314,7 +314,7 @@
   z-index: 10;
 }
 /* 第二條閃電 */
-#runCapoo.black-capoo .body .tail .tail-inner::after {
+#runCapoo.black-capoo .black-capoo-body .tail .tail-inner::after {
   content: "";
   width: 35%;
   height: 45%;
@@ -339,7 +339,7 @@
 
 /* mouth */
 /* mouth-left */
-#runCapoo.black-capoo .body .mouth .mouth-left {
+#runCapoo.black-capoo .black-capoo-body .mouth .mouth-left {
   width: 8%;
   height: 8%;
   position: absolute;
@@ -348,7 +348,7 @@
   rotate: -35deg;
   z-index: 7;
 }
-#runCapoo.black-capoo .body .mouth .mouth-round {
+#runCapoo.black-capoo .black-capoo-body .mouth .mouth-round {
   /* mouth-outline */
   width: 100%;
   height: 100%;
@@ -357,7 +357,7 @@
   position: absolute;
   z-index: 6;
 }
-#runCapoo.black-capoo .body .mouth .mouth-left .mouth-round::after {
+#runCapoo.black-capoo .black-capoo-body .mouth .mouth-left .mouth-round::after {
   /* mouth-inner */
   content: "";
   position: absolute;
@@ -368,7 +368,7 @@
   clip-path: ellipse(50% 40% at 50% 50%);
   background-color: var(--capoo-body-black);
 }
-#runCapoo.black-capoo .body .mouth .mouth-left .mouth-cover {
+#runCapoo.black-capoo .black-capoo-body .mouth .mouth-left .mouth-cover {
   width: 100%;
   height: 50%;
   background-color: var(--capoo-body-black);
@@ -379,7 +379,7 @@
 }
 /* mouth */
 /* mouth-right */
-#runCapoo.black-capoo .body .mouth .mouth-right {
+#runCapoo.black-capoo .black-capoo-body .mouth .mouth-right {
   width: 10%;
   height: 10%;
   position: absolute;
@@ -388,7 +388,11 @@
   rotate: 30deg;
   z-index: 7;
 }
-#runCapoo.black-capoo .body .mouth .mouth-right .mouth-round::after {
+#runCapoo.black-capoo
+  .black-capoo-body
+  .mouth
+  .mouth-right
+  .mouth-round::after {
   /* mouth-inner */
   content: "";
   position: absolute;
@@ -399,7 +403,7 @@
   clip-path: ellipse(50% 40% at 50% 50%);
   background-color: var(--capoo-body-black);
 }
-#runCapoo.black-capoo .body .mouth .mouth-right .mouth-cover {
+#runCapoo.black-capoo .black-capoo-body .mouth .mouth-right .mouth-cover {
   width: 100%;
   height: 58%;
   background-color: var(--capoo-body-black);

@@ -9,7 +9,7 @@ capoo.innerHTML = `
           <div class="ear-right-inner"></div>
         </div>
       </div>
-      <div class="body">
+      <div class="capoo-body">
         <div class="body-round">
           <div class="body-rounded"></div>
           <div class="body-rounded-outline"></div>
@@ -80,7 +80,7 @@ blackCapoo.innerHTML = `
     <div class="ear-right-inner"></div>
   </div>
 </div>
-<div class="body">
+<div class="black-capoo-body">
   <div class="body-round">
     <div class="body-rounded"></div>
     <div class="body-rounded-outline"></div>
