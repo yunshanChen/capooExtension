@@ -223,7 +223,7 @@ let newAddDiv = createCapoo();
 
 //每走完一次(15s)，random換一隻
 setInterval(function () {
-  console.log("走了１５秒(一個視窗寬)");
+  // console.log("走了１５秒(一個視窗寬)");
   document.getElementById("runCapoo").remove();
   //加新的一隻到body內
   document.body.appendChild(newAddDiv);
